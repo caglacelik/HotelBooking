@@ -1,3 +1,7 @@
 Hotel Booking Contract
 
-This contract created for hotel owners and customer to manage their booking operations in Solidity and tested using Mocha. It deployed in Avalanche Fuji Testnet following the instructions in https://docs.avax.network/dapps/smart-contracts/deploy-a-smart-contract-on-avalanche-using-remix-and-metamask via using Remix and Metamask
+This contract created for hotel owners and customer to manage their booking operations in Solidity and tested using Mocha. It deployed in Avalanche Fuji Testnet following the instructions in https://docs.avax.network/dapps/smart-contracts/deploy-a-smart-contract-on-avalanche-using-remix-and-metamask via using Remix and Metamask wallet.
+
+Contract Address : 0xB0f5e45AF87277D427c554F4C44d1e154B384a02
+
+Tx Detail : https://testnet.snowtrace.io/tx/0xc5068fe378086393857f2be1df236d1720a55058987af51c02f5707402fea893
