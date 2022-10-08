@@ -1,1 +1,2 @@
-HotelBooking
+Hotel Booking System Contract
+
