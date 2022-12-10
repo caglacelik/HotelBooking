@@ -1,4 +1,4 @@
-// HotelBooking contract is tested with the below functions using Mocha
+// HotelBooking contract is tested with functions below using Mocha
 
 const HotelBooking = artifacts.require("HotelBooking");
 let instance;
