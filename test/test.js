@@ -1,4 +1,4 @@
-// HotelBooking contract is tested with functions below using Mocha
+// HotelBooking contract is tested with functions below using Mocha.js
 
 const HotelBooking = artifacts.require("HotelBooking");
 let instance;
@@ -33,8 +33,8 @@ contract("HotelBooking", (accounts) => {
   });
 
   it("Owner should be account[0]", async () => {
-    // 1. Get the owner from contract object
-    // 2. Assert addresses of the owner and accounts[0] are same
+    // 1. Get the owner from contract 
+    // 2. Check address of the owner and accounts[0] are same
 
     let owner = await instance.owner();
     assert.equal(owner, accounts[0]);
@@ -43,10 +43,10 @@ contract("HotelBooking", (accounts) => {
   it("Should booking infos save correctly", async () => {
     // 1. Create a new Room
     // 2. Get the room infos of the rooms array
-    // 3. Make a book with accounts[1] and a created room
+    // 3. Make a book with accounts[1]
     // 4. Call this book via accounts[1] address
-    // 5. Compare the numbers & prices of the room and book objects
-    // 6. Assert the room availability is false
+    // 5. Compare the numbers & prices of the room and book 
+    // 6. Check the room's availability is false or not
 
     await instance.createRoom(325, 6500);
     let room = await instance.rooms.call(1);
@@ -65,7 +65,7 @@ contract("HotelBooking", (accounts) => {
 
   it("Should be revert: Not your book", async () => {
     // 1. Create a new Room
-    // 2. Try to call complete function with the book which is not own the caller
+    // 2. Try to call complete function with the book which does not exist
     // 3. Catch the error
     // 4. Assert the error
 
@@ -79,11 +79,11 @@ contract("HotelBooking", (accounts) => {
 
   it("Should be convert to room availability to true", async () => {
     // 1. Create a new Room
-    // 2. Make a book with accounts[1] and a created room
-    // 3. Complete the booking process with calling complete function
-    // 4. Get the room and the book objects
-    // 5. Assert room availability must be true
-    // 6. Assert the book' props set to their default values
+    // 2. Make a book with accounts[1] 
+    // 3. Complete booking process with calling complete function
+    // 4. Get the room and the book object
+    // 5. Check room's availability is true
+    // 6. Check the book's props set to their default values
 
     await instance.createRoom(265, 3000);
 
